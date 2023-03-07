@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for L in range(97, 123):
-    if chr(L) is not 'q' and chr(L) is not 'e':
-        print("{}".format(chr(L)), end="")
+for let in range(97, 123):
+    if chr(let) is not 'q' and chr(let) is not 'e':
+        print("{}".format(chr(let)), end="")
