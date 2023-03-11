@@ -21,7 +21,7 @@ int check_palindrome(listint_t **head, listint_t *last)
 {
 	if (last == NULL)
 		return (1);
-	if (check_palidrome(head, last->next) && (*head)->n == last->n)
+	if (check_palindrome(head, last->next) && (*head)->n == last->n)
 	{
 		*head = (*head)->next;
 		return (1);
