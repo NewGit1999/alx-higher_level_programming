@@ -40,4 +40,5 @@ check different type for last name:
 check more than correct names:
      >>> say_my_name("moon", "Flower", "Python")
      Traceback (most recent call last):
-     say_my_name() takes from 1 to 2 positional arguments but 3 were given
+     TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
