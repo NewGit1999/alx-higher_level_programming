@@ -4,6 +4,6 @@
 
 
 class Rectangle:
-    """class that defines a rectangle"""
+    """class that define a rectangle"""
 
     pass
