@@ -4,4 +4,4 @@
 
 class LockedClass:
     """locked class without attributes"""
-    __slots__ = ['first_name]
+    __slots__ = ['first_name']
