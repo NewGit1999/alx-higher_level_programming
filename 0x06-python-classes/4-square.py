@@ -4,7 +4,7 @@
 
 
 class Square:
-    """Represent a square."""
+    """creates squarre."""
 
     def __init__(self, size=0):
         """present an instance attribute."""
@@ -12,11 +12,12 @@ class Square:
 
     @property
     def size(self):
-        """Get/set the current size of the square."""
+        """retrieve size."""
         return (self.__size)
 
     @size.setter
     def size(self, value):
+        """set size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -24,5 +25,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Return the current area of the square."""
+        """gives area"""
         return (self.__size * self.__size)
