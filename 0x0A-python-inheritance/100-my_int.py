@@ -2,7 +2,7 @@
 """integer class"""
 
 
-class MyInt:
+class MyInt(int):
     """integer class"""
 
     def __eq__(self, func):
