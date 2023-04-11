@@ -7,8 +7,14 @@ class MyInt:
 
     def __eq__(self, func):
         """opposite of what default implementation returnd"""
-        return super().__ne__(func)
+        if int.__ne__(self, func):
+            return True
+        else:
+            return False
 
     def __ne__(self, func):
         """opposite of defualt implementation"""
-        return super().__eq__(func)
+        if int.__eq__(self, func):
+            return True
+        else:
+            return False
