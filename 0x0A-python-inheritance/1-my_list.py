@@ -2,7 +2,7 @@
 """my list task"""
 
 
-class MyList:
+class MyList(list):
     """inherit from list"""
 
     def print_sorted(self):
