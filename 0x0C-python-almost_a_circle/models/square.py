@@ -23,25 +23,35 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """assigns attributes"""
-        if len(agrs):
-            for i, z in enumerate(args):
+        if args and len(agrs) != 0:
+            i = 0
+            for z in args:
                 if i == 0:
-                    self.id = z
+                    if z is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = z
                 elif i == 1:
                     self.size = z
                 elif i == 2:
                     self.x = z
                 elif i == 3:
                     self.y = z
-        else:
-            if "id" in kwargs:
-                self.id = kwargs["id"]
-            if "size" in kwargs:
-                self.size = kwargs["size"]
-            if "x" in kwargs:
-                self.x = kwargs["x"]
-            if "y" in kwargs:
-                self.y = kwargs["y"]
+                i += 1
+
+        elif kwargs and len(kwargs) != 0:
+            for s, v in kwargs.items():
+                if s == "id":
+                    if v is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = v
+                elif s == "size":
+                    self.size = v
+                elif s == "x":
+                    self.x = v
+                elif s == "y":
+                    self.y = v
 
     def __str__(self):
         """string representation of squre"""
