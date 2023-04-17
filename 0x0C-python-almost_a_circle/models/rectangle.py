@@ -103,7 +103,7 @@ class Rectangle(Base):
                 elif i == 3:
                     self.x = z
                 elif i == 4:
-                    self.y == z
+                    self.y = z
         else:
             if "id" in kwargs:
                 self.id = kwargs["id"]
