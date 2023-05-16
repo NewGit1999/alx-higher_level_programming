@@ -1,7 +1,7 @@
 * What’s a database?
 * What’s a relational database
 * What does SQL stand for
-* What’s MySQL
+* What’s MySQL? features
 * How to create a database in MySQL
 * What does DDL and DML stand for
 * How to CREATE or ALTER a table
