@@ -1,1 +1,1 @@
-this is a repository for higher level languages and programming
+this is a repository for higher level languages and programming for learning
